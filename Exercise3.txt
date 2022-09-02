@@ -1,0 +1,38 @@
+
+
+
+/*2-B*/
+public class Main {
+
+	public static void main(String[] args) {
+	String A= "apple,orange,strawberry,banana";
+	char B[]=A.toCharArray();
+	String C[]= {"","","",""};
+	for(int i=0; i < C.length;i++) {
+		
+		for(int j=0; j < B.length;j++) {
+			if( B[j]!=',') {
+				
+				C[i] += B[j];
+				}else {
+					i++;
+					}
+				}
+			}
+	
+			for(int i=0; i<C.length;i++) {
+				System.out.println(C[i]);
+			}
+	}
+
+}
+
+OUTPUT:
+apple
+orange
+strawberry
+banana
+
+
+
+
